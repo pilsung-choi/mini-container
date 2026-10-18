@@ -1,0 +1,10 @@
+# 빌드 결과물
+/mini-container
+/bin/
+*.test
+
+# 실습용 루트 파일시스템 (용량이 커서 커밋하지 않음)
+/rootfs/
+*.tar.gz
+
+.DS_Store
