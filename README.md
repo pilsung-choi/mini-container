@@ -51,7 +51,7 @@ sudo go run . run /bin/sh
   | `sudo` 없이 실행 | `operation not permitted` (네임스페이스 생성은 root 권한 필요) |
 
 - **배운 것**
-  - 네임스페이스 플래그는 `syscall`의 상수이고, `go doc -all syscall \| grep CLONE_NEW`로 전체 목록을 찾을 수 있음
+  - 네임스페이스 플래그는 `syscall`의 상수이고, `go doc -all syscall | grep CLONE_NEW`로 전체 목록을 찾을 수 있음
   - 플래그는 비트 하나씩 켜진 숫자라 `|`로 합쳐 여러 네임스페이스를 동시에 만듦
   - `SysProcAttr` 칸은 포인터 타입이라 `&syscall.SysProcAttr{...}`로 넘김
 - **남은 문제**: 안에서 `echo $$`는 1인데 `ps aux`에는 VM 프로세스 146개가 전부 보임.
